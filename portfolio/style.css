@@ -8,6 +8,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #0f172a;
   color: #e5e7eb;
+  justify-content: center;
 }
 
 /* Navbar */
@@ -44,6 +45,7 @@ body {
 .section {
   padding: 80px 60px;
   min-height: 100vh;
+  justify-content: center;
 }
 
 .section h2 {
@@ -55,4 +57,66 @@ footer {
   text-align: center;
   padding: 20px;
   background: #020617;
+}
+
+
+/* ===== HERO SECTION ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  background: linear-gradient(135deg, #020617, #0f172a);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 span {
+  color: #38bdf8;
+}
+
+.hero-content h3 {
+  font-size: 1.5rem;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  max-width: 500px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-right: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: #38bdf8;
+  color: #020617;
+}
+
+.btn.primary:hover {
+  background: #0ea5e9;
+}
+
+.btn.secondary {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.btn.secondary:hover {
+  background: #38bdf8;
+  color: #020617;
 }
