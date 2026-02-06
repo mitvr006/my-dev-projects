@@ -5,11 +5,11 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #0f172a;
   color: #e5e7eb;
-  justify-content: center;
 }
+
 
 /* Navbar */
 .navbar {
@@ -41,17 +41,17 @@ body {
   color: #38bdf8;
 }
 
-/* Sections */
 .section {
-  padding: 80px 60px;
+  padding: 100px 80px;
   min-height: 100vh;
-  justify-content: center;
 }
 
 .section h2 {
-  margin-bottom: 20px;
-  color: #38bdf8;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  text-align: center;
 }
+
 
 footer {
   text-align: center;
@@ -120,3 +120,8 @@ footer {
   background: #38bdf8;
   color: #020617;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
