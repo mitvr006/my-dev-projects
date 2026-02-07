@@ -121,7 +121,51 @@ footer {
   color: #020617;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
+} */
+
+/* ===== ABOUT SECTION ===== */
+.about-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #020617;
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
+
+.about-img img {
+  width: 250px;
+  border-radius: 12px;
+}
+
+.about-content h3 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  line-height: 1.7;
+  color: #cbd5f5;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 200px;
+  }
+}
+
 
