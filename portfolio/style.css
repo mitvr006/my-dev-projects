@@ -153,6 +153,34 @@ footer {
   color: #cbd5f5;
 }
 
+/* ===== SKILLS SECTION ===== */
+.skills-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.skill-card {
+  background: #020617;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  background: #38bdf8;
+  color: #020617;
+}
+
+
 
 
 
