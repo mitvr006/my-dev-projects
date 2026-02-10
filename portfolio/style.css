@@ -233,6 +233,45 @@ footer {
   gap: 15px;
 }
 
+/* ===== EXPERIENCE SECTION ===== */
+.experience-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #020617;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.experience-card h3 {
+  color: #38bdf8;
+  margin-bottom: 5px;
+}
+
+.experience-card h4 {
+  color: #cbd5f5;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.experience-duration {
+  display: block;
+  margin-bottom: 20px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.experience-card ul {
+  padding-left: 20px;
+}
+
+.experience-card li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #e5e7eb;
+}
+
+
 
 
 
