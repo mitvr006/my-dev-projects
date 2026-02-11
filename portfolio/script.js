@@ -1,2 +1,4 @@
-console.log("Portfolio Day 1 setup done");
-console.log("Day 2: Portfolio structure ready");
+document.querySelector(".contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Message Sent Successfully!");
+});
