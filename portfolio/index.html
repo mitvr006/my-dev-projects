@@ -14,18 +14,24 @@
 </head>
 <body>
 
-  <header>
-    <nav class="navbar">
-      <h2 class="logo">Amit</h2>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <nav class="navbar">
+    <h2 class="logo">Amit</h2>
+
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 
   <!-- ===== HOME / HERO ===== -->
 <section id="home" class="hero">
@@ -192,24 +198,45 @@
 
 <!-- ===== CONTACT ===== -->
 <section id="contact" class="section contact fade-in">
-  <h2>Contact Me</h2>
+  <h2>Get In Touch</h2>
 
-  <div class="contact-container">
+  <div class="contact-wrapper">
 
     <!-- Contact Info -->
-    <div class="contact-details">
-      <h3>Get In Touch</h3>
+    <div class="contact-info">
 
-      <p><strong>Email:</strong><br> amitkumar3439744@gmail.com</p>
-      <p><strong>Phone:</strong><br> +91 8295519218</p>
-      <p><strong>Location:</strong><br> Sirsa, Haryana, India</p>
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h4>Email</h4>
+          <p>
+            <a href="mailto:amitkumar3439744@gmail.com">
+              amitkumar3439744@gmail.com
+            </a>
+          </p>
+        </div>  
+      </div>
 
-      <!-- Social Icons -->
-      <div class="social-icons">
+      <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <h4>Phone</h4>
+          <p>+91 8295519218</p>
+        </div>  
+      </div>
+
+      <div class="info-item">
+        <i class="fas fa-location-dot"></i>
+        <div>
+          <h4>Location</h4>
+          <p>Sirsa, Haryana, India</p>
+        </div>  
+      </div>
+
+      <div class="social-links">
         <a href="https://github.com/mitvr006" target="_blank">
           <i class="fab fa-github"></i>
         </a>
-
         <a href="https://www.linkedin.com/in/amit-kumar-04198131b/" target="_blank">
           <i class="fab fa-linkedin"></i>
         </a>
@@ -217,12 +244,14 @@
     </div>
 
     <!-- Contact Form -->
-    <div class="contact-right">
+    <div class="contact-form-box">
       <form class="contact-form">
         <input type="text" placeholder="Your Name" required>
         <input type="email" placeholder="Your Email" required>
         <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn primary">Send Message</button>
+        <button type="submit" class="btn primary full-btn">
+          Send Message
+        </button>
       </form>
     </div>
 
