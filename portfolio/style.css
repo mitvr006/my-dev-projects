@@ -390,7 +390,7 @@ footer {
 
 .menu-toggle {
   display: none;
-  font-size: 28px;
+  font-size: 1.8rem;
   cursor: pointer;
   color: #38bdf8;
 }
@@ -410,9 +410,10 @@ footer {
     width: 100%;
     flex-direction: column;
     text-align: left;
-    gap: 20px;
+    width: 200px;
     padding: 20px 0;
     display: none;
+    border-radius: 10px;
   }
 
   .nav-links.show {
@@ -429,6 +430,10 @@ footer {
 
   .hero-content h3 {
     font-size: 1.2rem;
+  }
+
+    .hero-buttons {
+    flex-direction: column;
   }
 }
 
