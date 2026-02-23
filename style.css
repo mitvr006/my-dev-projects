@@ -342,6 +342,7 @@ footer {
   margin: 0 auto;
   background: #020617;
   padding: 40px;
+  margin-bottom: 20px;
   border-radius: 18px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
