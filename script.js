@@ -1,8 +1,12 @@
 // ===== CONTACT FORM =====
-document.querySelector(".contact-form").addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("Message Sent Successfully!");
-});
+const contactForm = document.querySelector(".contact-form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Message Sent Successfully!");
+  });
+}
 
 
 // ===== FADE-IN ON SCROLL =====
@@ -14,12 +18,10 @@ const appearOptions = {
 
 const appearOnScroll = new IntersectionObserver(function(entries, observer) {
   entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-      return;
-    } else {
-      entry.target.classList.add("show");
-      observer.unobserve(entry.target);
-    }
+    if (!entry.isIntersecting) return;
+
+    entry.target.classList.add("show");
+    observer.unobserve(entry.target);
   });
 }, appearOptions);
 
@@ -37,9 +39,8 @@ window.addEventListener("scroll", () => {
 
   sections.forEach(section => {
     const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
 
-    if (scrollY >= sectionTop - 200) {
+    if (window.scrollY >= sectionTop - 200) {
       current = section.getAttribute("id");
     }
   });
@@ -53,25 +54,30 @@ window.addEventListener("scroll", () => {
 });
 
 
+// ===== MOBILE MENU =====
 document.addEventListener("DOMContentLoaded", function () {
 
   const menuToggle = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
+  const navLinksMenu = document.getElementById("nav-links");
 
-  menuToggle.addEventListener("click", function () {
-    navLinks.classList.toggle("show");
-  });
-
-  // Close menu after clicking link
-  document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("show");
+  if (menuToggle && navLinksMenu) {
+    menuToggle.addEventListener("click", function () {
+      navLinksMenu.classList.toggle("show");
     });
-  });
 
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinksMenu.classList.remove("show");
+      });
+    });
+  }
 });
 
+
+// ===== LOADER =====
 window.addEventListener("load", function () {
-  document.getElementById("loader").style.display = "none";
+  const loader = document.getElementById("loader");
+  if (loader) {
+    loader.style.display = "none";
+  }
 });
-
